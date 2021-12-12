@@ -71,4 +71,10 @@
       "C-<up>"         #'+evil/window-move-up
       "C-<right>"      #'+evil/window-move-right)
 
-(setq treemacs-position 'right)
+(setq neo-window-position 'right)
+(setq confirm-kill-emacs nil)
+(use-package web-mode
+  :ensure t
+  :config
+    '(setq web-mode-code-indent-offset 2)
+    '(setq web-mode-markup-indent-offset 2))
