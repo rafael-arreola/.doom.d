@@ -48,9 +48,3 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
-
-(package! ligature :recipe
-  (:host github
-   :repo "mickeynp/ligature.el"
-   :files ("ligature.el"))
-)
